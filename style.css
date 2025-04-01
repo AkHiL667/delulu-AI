@@ -106,7 +106,7 @@ body {
   width: 100%;
   min-height: 10vh;
   height: fit-content;
-  color: white;
+  color: white !important;
   background-color: rgb(21, 20, 20);
   padding: 12px 40px 12px 12px;
   border: 2px solid #272727;
@@ -116,7 +116,6 @@ body {
   /* white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word; */
-  /* background-color: #0056b3; */
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
@@ -141,4 +140,47 @@ body {
 
 .send-btn:hover {
   background: #0056b3;
+}
+
+.send-btn:active {
+  background-color: #02468f;
+}
+
+.chat-container {
+  background-color: #0057b383;
+  height: 100%;
+  width: 60vw;
+  overflow-y: scroll;
+}
+
+.chat-container::-webkit-scrollbar {
+  display: none;
+}
+
+.user {
+  background-color: #baccdfc6;
+  max-width: 80%;
+  width: fit-content;
+  border-radius: 1vw;
+  display: flex;
+  justify-self: flex-end;
+  margin-bottom: 1vw;
+
+  p {
+    padding: 0.6vw;
+
+  }
+}
+
+
+.model {
+  background-color: rgba(165, 42, 42, 0.799);
+  margin-bottom: 1vw;
+  border-radius: 1vw;
+  max-width: 80%;
+  width: fit-content;
+
+  p {
+    padding: 0.6vw;
+  }
 }

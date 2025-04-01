@@ -29,12 +29,21 @@
       </div>
     </div>
     <div class="hero">
+      <div class="chat-container">
+        <div class="user">
+          <p>hello how are you</p>
+        </div>
+        <div class="model">
+          <p>i am fine what about you</p>
+        </div>
+      </div>
       <div class="chat-input-container">
-        <textarea type="text" placeholder="Ask Delulu" class="chat-input"> </textarea>
-        <button class="send-btn">➤</button>
+        <textarea placeholder="Ask Delulu" class="chat-input jsinput"></textarea>
+        <button class="send-btn jsbtn">➤</button>
       </div>
     </div>
   </div>
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
@@ -51,7 +60,15 @@
   <script src="
 https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js
 "></script>
-  <script src="script.js"></script>
+
+  <script type="importmap">
+  {
+      "imports": {
+      "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+  }
+</script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
